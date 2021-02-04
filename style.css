@@ -1,0 +1,156 @@
+*{
+    background-color:white;
+    margin: 0;
+    padding: 0;
+    font-family: cursive;
+}
+.main{
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+.main h1{
+    position: relative;
+    height: auto;
+    width: 50%;
+    left: 52%;
+    transform: translate(-50%);
+    margin: 5% 0 2% 0;
+    text-align: center;
+    font-size: 2.8rem;
+    font-weight: 650;
+    letter-spacing: 1.5px;
+    color:black;
+    
+}
+.main .art_gallery{
+    position: relative;
+    height: auto;
+    width: 90%;
+    margin: auto;
+    padding: 45px 0;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 2vh;
+    grid-auto-flow: dense;
+}
+.main .art_gallery .images{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 2%;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.9);
+}
+
+.main .art_gallery .images:first-child{
+    grid-column-start: span 2;
+    grid-row-start: span 2 ;
+}
+.main .art_gallery .images:nth-child(2n+3){
+    grid-row-start: span 2;
+}
+.main .art_gallery .images:nth-child(4n+5){
+    grid-column-start: span 2;
+    grid-row-start: span 2;
+}
+.main .art_gallery .images:nth-child(6n+7){
+    grid-row-start: span 1;
+}
+.main .art_gallery .images:nth-child(8n+9){
+    grid-column-start: span 1;
+    grid-row-start: span 1;
+}
+.main .art_gallery .images img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: 0.3s ease-in-out;
+}
+.main .art_gallery .images img:hover{
+    filter: brightness(1) grayscale(0);
+}
+@media only screen and (max-width: 768px){
+    .main h1{
+        font-size: 1.8em;
+        
+    }
+}
+
+#modal{
+    position: fixed;
+    top: 0vh;
+    left: 0vh;
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: 100vh;
+    display: flex;    
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+#modal_img{
+   
+    width: auto;
+    animation-name: modal-entry;
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
+
+}
+@keyframes modal-entry{
+    0%{
+        transform: scale(0);
+    }
+    70%{
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+#modal button{
+    background-color: transparent;
+    border: none;
+    font-size: 36px;
+    position: absolute;
+    align-items: center;
+    top: 5%;
+    right: 10%;
+}
+
+
+
+
+
+
+
+
+
+
+filter: brightness(0.5) grayscale(75);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

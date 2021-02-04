@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArtSky</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">    
+    <h1>ART SKY</h1>
+    <h3></h3>
+    
+    <div class="art_gallery">
+        <div class="images">
+            <img src="artworks/a1.jpeg"  alt="oops" onclick="show(this)">
+        </div>
+        <div class="images">
+            <img src="artworks/a2.jpeg"  alt="oops" onclick="show(this)">
+        </div>
+        <div class="images">
+            <img src="artworks/a3.jpeg"  alt="oops" onclick="show(this)">
+        </div>
+        <div class="images">
+            <img src="artworks/a4.jpeg"  alt="oops" onclick="show(this)">
+        </div>
+        <div class="images">
+            <img src="artworks/a5.jpeg"  alt="oops" onclick="show(this)">
+        </div>
+        <div class="images">
+            <img src="artworks/a6.jpeg"  alt="oops" onclick="show(this)">
+        </div>
+        <div class="images">
+            <img src="artworks/a17.jpeg"  alt="oops" onclick="show(this)">
+        </div>
+        <div class="images">
+            <img src="artworks/a8.jpeg"  alt="oops" onclick="show(this)">
+        </div>
+        <div class="images">
+            <img src="artworks/a9.jpeg"  alt="oops" onclick="show(this)">
+        </div>
+        <div class="images">
+            <img src="artworks/a10.jpeg"  alt="oops" onclick="show(this)">
+        </div>
+        <div class="images">
+            <img src="artworks/a11.jpeg"  alt="oops" onclick="show(this)">
+        </div>
+        <div class="images">
+            <img src="artworks/a12.jpeg"  alt="oops" onclick="show(this)">
+        </div>
+        <div class="images">
+            <img src="artworks/a13.jpeg"  alt="oops" onclick="show(this)">
+        </div>
+        <div class="images">
+            <img src="artworks/a14.jpeg"  alt="oops" onclick="show(this)">
+        </div>
+        <div class="images">
+            <img src="artworks/a15.jpeg"  alt="oops" onclick="show(this)">
+        </div>
+        <div class="images">
+            <img src="artworks/a16.jpeg"   alt="oops" onclick="show(this)">
+        </div>
+        <div class="images">
+            <img src="artworks/a18.jpeg"   alt="oops" onclick="show(this)">
+        </div>
+        <div class="images">
+            <img src="artworks/a19.jpeg"   alt="oops" onclick="show(this)">
+        </div>
+        <div class="images">
+            <img src="artworks/a20.jpeg"   alt="oops" onclick="show(this)">
+        </div>
+        <div class="images">
+            <img src="artworks/a21.jpeg"   alt="oops" onclick="show(this)">
+        </div>
+        <div class="images">
+            <img src="artworks/a22.jpeg"   alt="oops" onclick="show(this)">
+        </div>
+        <div class="images">
+            <img src="artworks/a23.jpeg"   alt="oops" onclick="show(this)">
+        </div>
+        <div class="images">
+            <img src="artworks/a24.jpeg"   alt="oops" onclick="show(this)">
+        </div>
+        <div class="images">
+            <img src="artworks/a25.jpeg"   alt="oops" onclick="show(this)">
+        </div>
+        
+    </div>
+
+    
+
+</div>
+<div id="modal">
+    <button type="button" onclick="hide()"><i class="fas fa-window-close">X</i></button>
+    <img src="" alt="hello" width="75%" height="80%" id="modal_img">
+</div>
+
+
+<script>
+    var modal = document.getElementById('modal');
+    var modal_img = document.getElementById('modal_img');
+
+    function show(t){
+        modal.style.display="flex";
+        modal_img.src = t.src;
+    }
+    function hide(){
+        modal.style.display = "none";
+
+    }
+    window.onclick = function(event){
+        if(event.target==modal)
+        {
+            modal.style.display= "none";
+        }
+    }
+</script>
+</body>
+</html>
